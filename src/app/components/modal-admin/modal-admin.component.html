@@ -1,0 +1,34 @@
+<div class="container">
+    <h1 mat-dialog-title>Encargado</h1>    
+</div>
+<div mat-dialog-content>
+    <form #envioForm="ngForm" role="form" (ngSubmit)="agregarAdmin(Administracion);">
+        <div class="example-container">
+            <mat-form-field>
+                <input matInput type="text" placeholder="Nombre"
+                [(ngModel)]="admin.nombre" name="input1" #nombreA>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Apellido"
+                [(ngModel)]="admin.apellido" name="input2" #nombreA>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="text" placeholder="Cargo"
+                [(ngModel)]="admin.cargo" name="input3" #nombreCar>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <input matInput type="password" placeholder="Contraseña"
+                [(ngModel)]="admin.password" name="input4" #nombreC>
+            </mat-form-field>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button type="button" (click)="clickSalir();"><i class="material-icons">
+    arrow_back</i>Atrás</button>
+    <button mat-button type="submit" (click)="agregarAdmin();"><i class="material-icons">
+    send</i>Enviar</button>
+</div>

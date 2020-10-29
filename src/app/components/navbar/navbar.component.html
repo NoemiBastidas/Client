@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container">
+    <a class="navbar-brand" routerLink='/inicio'> <b> Minkafab</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="abrirModalInicioAdmin()">Administración</a>
+        </li>
+      </ul>
+      <!--
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Busca Un Artículo?" aria-label="Buscar ...">
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Buscar</button>
+      </form>
+      -->
+      <a class="carrito-btn btn btn-outline-warning d-lg-inline-block mb-3 mb-md-0 ml-md-3" (click)="abrirModal();">
+        <i class="fas fa-sign-in-alt"></i>
+        Iniciar Sesión
+      </a>
+      <a class="carrito-btn btn btn-outline-warning d-lg-inline-block mb-3 mb-md-0 ml-md-3" routerLink='/registro'>
+        <i class="fas fa-address-card"></i>
+        Registrate
+      </a>
+      <!--
+      <a class="btn btn-outline-warning d-lg-inline-block mb-3 mb-md-0 ml-md-3" routerLink='/login'><i class="fas fa-user"></i>
+        Registrate</a>-->
+
+    </div>
+
+  </div>
+
+</nav>
+<!-- COMENTARIO -->
+<!-- routerLink='/carrito' -->
+<!-- routerLink='/main-navbar' -->

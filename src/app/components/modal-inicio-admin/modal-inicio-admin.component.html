@@ -1,0 +1,26 @@
+<div class="container">
+  <h1 mat-dialog-title>Administrador</h1>
+</div>
+<div mat-dialog-content>
+  <form #envioForm="ngForm" role="form" (ngSubmit)="envioAdmin();" method="POST">
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Nombre" name="nombre" #input1 [(ngModel)]="enviarDatos.nombre">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Apellido" name="apellido" #apellido [(ngModel)]="enviarDatos.apellido">
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Contraseña" name="pass" #pas [(ngModel)]="enviarDatos.password">
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button type="button" (click)="clickSalir();"><i class="material-icons">
+      arrow_back</i>Atrás</button>
+  <button mat-button type="submit" (click)="envioAdmin();"><i class="material-icons">
+      send</i>Ingresar</button>
+</div>

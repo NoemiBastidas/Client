@@ -1,0 +1,76 @@
+<div class="container">
+  <h1 mat-dialog-title>Nuevo Cliente</h1>
+</div>
+<div mat-dialog-content>
+  <form #envioForm="ngForm" role="form" (ngSubmit)="agregarProducto(pasteles)">
+    <div class="container">
+      <!-- <label for="formGroupExampleInput">
+        <h5> Subir Imagen:</h5>
+      </label> <br />
+      <img (click)="fileInput.click()" width="140" height="160" class="card-img fotoPerfilPortada rounded-circle"
+        src="{{srcFoto}}" /> <br> <br>
+      <input hidden=true type="file" style="display: none;" #fileInput (change)="CodificarArchivo($event)"
+        accept="image/*"> -->
+
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Nombre " [(ngModel)]="pasteles.nombre" name="input1" #nombre
+          formControlName="nombre">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="email" placeholder="Email " [(ngModel)]="pasteles.nombre" name="input2" #email
+          formControlName="email">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="password" placeholder="Contraseña " [(ngModel)]="pasteles.nombre" name="input3" #password
+          formControlName="password">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Targeta de crédito" [(ngModel)]="pasteles.nombre" name="input4" #credit
+          formControlName="credit">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Dirección 1 " [(ngModel)]="pasteles.nombre" name="input5" #adress1
+          formControlName="adress1">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Dirección 2 " [(ngModel)]="pasteles.nombre" name="input6" #adress2
+          formControlName="adress2">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Ciudad " [(ngModel)]="pasteles.nombre" name="input7" #city
+          formControlName="city">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Región" [(ngModel)]="pasteles.nombre" name="input8" #region
+          formControlName="region">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="text" placeholder="Código Postal" [(ngModel)]="pasteles.nombre" name="input9" #postal
+          formControlName="postal">
+      </mat-form-field>
+      <mat-form-field [formGroup]="formProducto">
+        <input matInput type="number" placeholder=" Número de Teléfono" [(ngModel)]="pasteles.nombre" name="input10"
+          #phone formControlName="phone">
+      </mat-form-field>
+      <!-- <div class="alert-danger" *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)">
+            <div class="container-error" *ngIf="nombre.errors.required">
+                <small>Este campo es requerido</small>
+            </div>
+            <div class="container-error" *ngIf="nombre.errors.minlength || nombre.errors.maxlength">
+                <small>Este campo debe tener minimo 5 y maximo 20 digitos</small>
+            </div>
+        </div> -->
+
+
+    </div>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-button type="button" (click)="clickSalir();"><i class="material-icons">
+      arrow_back</i>Atrás</button>
+  <button mat-button type="submit" (click)="agregarProducto();"><i class="material-icons">
+      add_circle</i>Añadir</button>
+</div>
+
+<!-- [formGroup]='formProducto' -->
+<!-- (click)="agregarProducto();" -->

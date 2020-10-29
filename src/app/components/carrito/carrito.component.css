@@ -1,0 +1,67 @@
+.titulo {
+    color: #F7C42D
+}
+
+.card-body .item-btn {
+    padding: 0px;
+    width: 70px;
+    height: 28px;
+}
+
+.card-body .item-btn2 {
+    padding: 0px;
+    width: 165px;
+    height: 28px;
+}
+
+.card-body .opcion {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 0px;
+    width: 70px;
+    height: 35px;
+    color: #F7C42D;
+    background-color: #6C757D;
+}
+
+.card-body .total {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 0px;
+    width: 70px;
+    height: 35px;
+    color: #F7C42D;
+    background-color: #6C757D;
+}
+
+.card-body .producto {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 0px;
+    width: 340px;
+    height: 35px;
+    color: #F7C42D;
+    background-color: #6C757D;
+}
+
+.card-body .card-title {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 0px;
+    width: 166px;
+    height: 35px;
+    color: #F7C42D;
+    background-color: #6C757D;
+}
+
+.titulo {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    width: 1110px;
+    height: 54px;
+}

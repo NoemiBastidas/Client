@@ -1,0 +1,109 @@
+.text-center {
+    color: #F7C42D
+}
+
+.productos {
+    color: black;
+}
+
+.carousel-inner{
+    padding: 20px;
+}
+
+img.mediana {
+    width: auto;
+    height: 250px;
+    align-content: center;
+}
+
+.carousel-item {
+    min-height: 100%;
+    min-width: 100%;
+    width: 1000px;
+    height: 400px;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: transparent;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f061";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 55px;
+    color: #6C757D;
+}
+
+.carousel-control-prev-icon:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f060";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 55px;
+    color: #6C757D;
+}
+
+.card-body .precio {
+    border: 1px solid #6C757D;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    padding: 0px;
+    width: 205px;
+    height: 40px;
+    position: relative;
+}
+
+.card-group{
+    width: 100%;
+}
+
+/* .nav-item .nav-link {
+	color:white;
+} */
+
+/* .nav-item .nav-link:hover {
+  background: #827C7C;
+	color: #DDD9D9;
+} */
+
+/*color del título Pastelería*/
+
+.navbar-brand {
+	color: white;
+}
+
+/*margenes del navbar*/
+
+.navbar {
+	height: 45px;
+	border: 1px solid;
+	position: relative;
+  	width: 100%;
+}
+
+/*cambios de color en el dropdown*/
+
+/* .dropdown-item:hover {
+	background: #DDD9D9;
+	color: #205A93;
+} */
+
+.carrito-btn {
+	padding: 0px;
+    width: 200px;
+    height: 28px;
+	color: white;
+	background-color: #827C7C;
+	border: #DDD9D9;
+}
