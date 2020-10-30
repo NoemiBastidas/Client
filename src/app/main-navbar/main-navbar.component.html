@@ -21,6 +21,7 @@
       <a mat-list-item (click)="abrirModalAdmin();"><i class="material-icons">
           person_add</i>Registrar Aministrador</a>
     </mat-nav-list>
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -33,7 +34,23 @@
       </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
-    <!-- <ng-content></ng-content> -->
+    <ng-content></ng-content>
+    <mat-drawer-container class="example-container" autosize>
+      <mat-drawer #drawer class="example-sidenav" mode="side">
+        <p>Auto-resizing sidenav</p>
+        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+          Toggle extra text
+        </button>
+      </mat-drawer>
+
+      <div class="example-sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+          Toggle sidenav
+        </button>
+      </div>
+
+    </mat-drawer-container>
     <!-- <app-pedidos></app-pedidos> -->
   </mat-sidenav-content>
 </mat-sidenav-container>
