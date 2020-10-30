@@ -1,43 +1,41 @@
 /*color de las opciones del navbar*/
 
 .nav-item .nav-link {
-	color:white;
+  color: white;
 }
 
 .nav-item .nav-link:hover {
   background: #827C7C;
-	color: #DDD9D9;
+  color: #DDD9D9;
 }
 
 /*color del título Pastelería*/
 
 .navbar-brand {
-	color: white;
+  color: white;
 }
 
 /*margenes del navbar*/
 
 .navbar {
-	height: 45px;
-	border: 1px solid;
-	position: relative;
-  	width: 100%;
+  height: 45px;
+  border: 1px solid;
+  position: relative;
+  width: 100%;
 }
 
 /*cambios de color en el dropdown*/
 
 .dropdown-item:hover {
-	background: #DDD9D9;
-	color: #205A93;
+  background: #DDD9D9;
+  color: #205A93;
 }
 
 .carrito-btn {
-	padding: 0px;
-    width: 200px;
-    height: 28px;
-	color: white;
-	background-color: #827C7C;
-	border: #DDD9D9;
+  padding: 0px;
+  width: 200px;
+  height: 28px;
+  color: #2e3133;
+  background-color: #1e9c29;
+
 }
-
-

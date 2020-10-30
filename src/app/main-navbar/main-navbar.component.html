@@ -2,23 +2,22 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menú</mat-toolbar>
+    <div class="text-center">
+      <p>
+        <h3>Minkafab-Menú</h3>
+
+    </div>
     <mat-nav-list>
-      <!-- <ul>
-        <li>
-          <a mat-list-item (click)="abrirModal();">Añadir Producto</a>
-        </li>
-        <li>
-          <a mat-list-item [routerLink]="['/pedidos']">Ver Pedidos</a>
-          <a mat-list-item href="/pedidos">Ver Pedidos</a>
-        </li>
-      </ul> -->
       <a mat-list-item (click)="abrirModal();"><i class="material-icons">
           add</i> Añadir Cliente</a>
-      <a mat-list-item routerLink="/pedidos"><i class="material-icons">
+      <a mat-list-item (click)="abrirModal();"><i class="material-icons">
+          add</i> Añadir Nuevo Modelo</a>
+      <a mat-list-item (click)="abrirModal();"><i class="material-icons">
+          add</i> Añadir Nuevo Controlador</a>
+      <!-- <a mat-list-item routerLink="/pedidos"><i class="material-icons">
           list_alt</i>Ver Pedidos</a>
       <a mat-list-item routerLink="/inicio"><i class="material-icons">
-          person</i>Cerrar Sesión</a>
+          person</i>Cerrar Sesión</a> -->
       <a mat-list-item (click)="abrirModalAdmin();"><i class="material-icons">
           person_add</i>Registrar Aministrador</a>
     </mat-nav-list>

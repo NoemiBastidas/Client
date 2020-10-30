@@ -3,8 +3,9 @@
 }
 
 .sidenav {
-  width: 200px;
-  box-shadow: 3px 0 6px rgba(0, 0, 0, .24)
+  width: 300px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+  background-color: #343A40;
 }
 
 .sidenav .mat-toolbar {
@@ -18,8 +19,19 @@
   background-color: #343A40;
 }
 
-.container{
+.container {
   text-align: center;
 }
 
+.text-center {
+  color: #f4f7f5;
+  text-align: justify;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
 
+.mat-nav-list {
+  color: #f4f7f5;
+
+}

@@ -1,30 +1,30 @@
 <div class="container">
-    <h1 mat-dialog-title>Haz tu Pedido</h1>
+  <h1 mat-dialog-title>Haz tu Pedido</h1>
 </div>
 <div mat-dialog-content>
-    <form #envioForm="ngForm" role="form" (ngSubmit)="agregarPedido(Pedidos);">
-        <div class="example-container">
-            <mat-form-field>
-                <input matInput type="text" placeholder="Nombre" [(ngModel)]="pedido.nombre" name="input1" #nombreC>
-            </mat-form-field>
-            <br>
-            <mat-form-field>
-                <input matInput type="text" placeholder="Apellido" [(ngModel)]="pedido.apellido" name="input2" #nombreA>
-            </mat-form-field>
-            <br>
-            <mat-form-field>
-                <input matInput type="text" placeholder="Cédula" [(ngModel)]="pedido.cedula" name="input3" #nombreCI>
-            </mat-form-field>
-            <br>
-            <mat-form-field>
-                <input matInput type="text" placeholder="teléfono" [(ngModel)]="pedido.telefono" name="input4" #nombreT>
-            </mat-form-field>
-        </div>
-    </form>
+  <form #envioForm="ngForm" role="form" (ngSubmit)="agregarPedido(Pedidos);">
+    <div class="example-container">
+      <mat-form-field>
+        <input matInput type="text" placeholder="Nombre" [(ngModel)]="pedido.nombre" name="input1" #nombreC>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Apellido" [(ngModel)]="pedido.apellido" name="input2" #nombreA>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="text" placeholder="Cédula" [(ngModel)]="pedido.cedula" name="input3" #nombreCI>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <input matInput type="text" placeholder="teléfono" [(ngModel)]="pedido.telefono" name="input4" #nombreT>
+      </mat-form-field>
+    </div>
+  </form>
 </div>
 <div mat-dialog-actions>
-    <button mat-button type="button" (click)="clickSalir();"><i class="material-icons">
+  <button mat-button type="button" (click)="clickSalir();"><i class="material-icons">
       arrow_back</i>Atrás</button>
-    <button mat-button type="submit" (click)="agregarPedido();"><i class="material-icons">
+  <button mat-button type="submit" (click)="agregarPedido();"><i class="material-icons">
       send</i>Enviar</button>
 </div>Imagen
